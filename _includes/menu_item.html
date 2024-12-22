@@ -1,12 +1,11 @@
-<ul>
   {%-for item in include.collection-%}
-    <li>
+    <h3>
     {%- if item.url -%}
       <a href="{{ item.url }}">{{ item.title }}</a>
     {%- else -%}
       {{ item.title }}
     {%- endif -%}
-    </li>
+    </h3>
 
     {%-if item.post_list-%}
       {%
@@ -18,9 +17,4 @@
           show_more_url=item.post_list.show_more_url
      -%}
     {%-endif-%}
-
-    {%-if item.entries-%}
-      {%-include menu_item.html collection=item.entries-%}
-    {%-endif-%}
   {%-endfor-%}
-</ul>
