@@ -1,11 +1,11 @@
   {%-for item in include.collection-%}
-    <h3>
+    <h2>
     {%- if item.url -%}
       <a href="{{ item.url }}">{{ item.title }}</a>
     {%- else -%}
       {{ item.title }}
     {%- endif -%}
-    </h3>
+    </h2>
 
     {%-if item.post_list-%}
       {%

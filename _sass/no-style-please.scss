@@ -33,6 +33,10 @@ body {
   overflow-wrap: break-word;
 }
 
+.post-title {
+  margin-bottom: 0;
+}
+
 .post-meta {
   text-align: right;
   margin-top: 0;
@@ -54,14 +58,6 @@ li { margin: 0.4rem 0; }
   padding: 4rem 2rem;
 }
 
-hr {
-  text-align: center;
-  border: 0;
-
-  &:before { content: '/////' }
-  &:after { content: attr(data-content) '/////' }
-}
-
 table { width: 100%; }
 
 table, th, td {
@@ -78,7 +74,6 @@ code {
 div.highlighter-rouge code {
   display: block;
   overflow-x: auto;
-  white-space: pre-wrap;
   padding: 1rem;
 }
 
