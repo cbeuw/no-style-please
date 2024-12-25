@@ -10,4 +10,7 @@ layout: default
 
 {%-include menu_item.html collection=site.data.menu.entries-%}
 
-{{ content }}
+<h2>Links</h2>
+{%-for item in site.data.menu.links-%}
+  <p><a href="{{ item.url }}">{{ item.name }}</a></p>
+{%-endfor-%}
